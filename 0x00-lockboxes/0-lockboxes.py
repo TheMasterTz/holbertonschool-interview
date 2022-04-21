@@ -3,6 +3,7 @@
     _summary_
 """
 
+
 def canUnlockAll(boxes):
     """sumary_line
 
@@ -15,7 +16,7 @@ def canUnlockAll(boxes):
 
     for key in myKeys:
         for item in boxes[key]:
-            if item not in myKeys:
+            if item not in myKeys and item < len(boxes):
                 myKeys.append(item)
 
     if len(myKeys) == len(boxes):
