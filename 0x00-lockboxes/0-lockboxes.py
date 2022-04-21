@@ -1,15 +1,18 @@
 #!/usr/bin/python3
 """
-    _summary_
+    You have n number of locked boxes in front of you. Each
+    box is numbered sequentially from 0 to n - 1 and each box
+    may contain keys to the other boxes.
 """
 
 
 def canUnlockAll(boxes):
-    """sumary_line
+    """canUnlockAll
 
     Keyword arguments:
-    argument -- description
-    Return: return_description
+    argument -- method which determines when all the boxes
+    could be opened
+    Return: false or true
     """
 
     myKeys = [0]
