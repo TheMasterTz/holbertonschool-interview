@@ -6,6 +6,7 @@
     operations needed to result in exactly n H characters in the file.
 """
 
+
 def minOperations(n):
     """ Return sum of process until n H """
     if n < 2 or type(n) is not int:
