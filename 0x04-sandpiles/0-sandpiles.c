@@ -19,7 +19,6 @@ void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 
 }
 
-
 /**
  * sum_grids - computes the sum of two sandpiles
  * @grid1: sandpiles stable
@@ -40,7 +39,6 @@ void sum_grids(int grid1[3][3], int grid2[3][3])
 		}
 	}
 }
-
 
 /**
  * check_grids - computes the sum of two sandpiles
