@@ -36,13 +36,14 @@ def print_stats():
         if st_code[key]:
             print("{}: {}".format(key, st_code[key]))
 
-try:
-    for line in sys.stdin:
-        file_size += parse_line(line)
-        if count % 10 == 0:
-            print_stats()
-        count += 1
-except KeyboardInterrupt:
+if __name__ == '__main__':
+    try:
+        for line in sys.stdin:
+            file_size += parse_line(line)
+            if count % 10 == 0:
+                print_stats()
+            count += 1
+    except KeyboardInterrupt:
+        print_stats()
+        raise
     print_stats()
-    raise
-print_stats()
